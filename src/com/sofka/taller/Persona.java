@@ -27,6 +27,7 @@ public class Persona {
         this.Sexo=Sexo;
         this.Peso=Peso;
         this.Altura=Altura;
+        this.generarDNI();
     }
     public void SetNombre(String Nombre){
         this.Nombre=Nombre;
@@ -40,7 +41,7 @@ public class Persona {
     public void SetPeso(double Peso){
         this.Peso = Peso;
     }
-    public void SetAltur(double Altura){
+    public void SetAltura(double Altura){
         this.Altura = Altura;
     }
 
@@ -66,6 +67,7 @@ public class Persona {
 
     private void generarDNI(){
         Random random=new Random();
+        DNI="";
         for(int i=0;i<8;i++){
             int numero = random.nextInt(0+10);
             this.DNI+=numero;
