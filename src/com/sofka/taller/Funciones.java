@@ -1,5 +1,8 @@
 package com.sofka.taller;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 
@@ -166,6 +169,37 @@ public class Funciones {
             }
             System.out.println("tomando como base el primer String o el String mayor las diferencias son :"+Diferencias);
         }
+    }
+    public void fechaActual() {
+        LocalDateTime FechaActual= LocalDateTime.now();
+        DateTimeFormatter formatoFecha=DateTimeFormatter.ofPattern("yyyy/MM/DD HH:mm:ss");
+        System.out.println(formatoFecha.format(FechaActual));
+    }
+
+    public void Saltos(){
+        System.out.println("Ingrese el numero inicial");
+        int numInicial = captura.nextInt();
+        for (int i=numInicial; i<=1000;i=i+2 ){
+            System.out.println(i);
+        }
+    }
+    public void Menu(){
+        int opcion=0;
+        do{
+        System.out.println("******GESTION CINEMATOGRAFICA******");
+        System.out.println("1-NUEVO ACTOR");
+        System.out.println("2-BUSCAR ACTOR");
+        System.out.println("3-ELIMINAR ACTOR");
+        System.out.println("4-MODIFICAR ACTOR");
+        System.out.println("5-VER TODOS LOS ACTORES");
+        System.out.println("6-VER PELICULAS DE LOS ACTORES");
+        System.out.println("7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES");
+        System.out.println("8-SALIR");
+        System.out.println("Ingrese su opcion");
+        opcion = captura.nextInt();
+        if (opcion <1 || opcion>8) System.out.println("OPCION INCORRECTA");
+        }while (opcion !=8);
+
     }
 
 }

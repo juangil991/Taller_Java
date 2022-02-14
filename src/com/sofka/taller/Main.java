@@ -13,6 +13,14 @@ public class Main {
         //calculo.reemplazarChar();
         //calculo.eliminarChar();
         //calculo.contadorVocales();
-        calculo.stringDiferencias();
+        //calculo.stringDiferencias();
+        //calculo.fechaActual();
+        //calculo.Saltos();
+        //calculo.Menu();
+       // Persona juan = new Persona("juan",17,"1152199593",'H',48.0, 1.51);
+        Persona Carlos= new Persona();
+        //System.out.println(juan.calcularIMC());
+        //System.out.println(juan.esMayorDeEdad());
+       // System.out.println(Carlos.DNI);
     }
 }
