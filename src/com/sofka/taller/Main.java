@@ -18,6 +18,8 @@ public class Main {
         //calculo.Saltos();
         //calculo.Menu();
         //PersonaEjecutable personas= new PersonaEjecutable();
+        ElectrodomesticosEjecutables allelectrodomesticos=new ElectrodomesticosEjecutables();
+
 
     }
 }
