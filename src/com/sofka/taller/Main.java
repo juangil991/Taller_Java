@@ -9,6 +9,10 @@ public class Main {
         //System.out.println(calculo.calculoIva());
         //calculo.numerosImpares();
         //calculo.mayorCero();
-        calculo.diaLaboral();
+        //calculo.diaLaboral();
+        //calculo.reemplazarChar();
+        //calculo.eliminarChar();
+        //calculo.contadorVocales();
+        calculo.stringDiferencias();
     }
 }

@@ -103,4 +103,69 @@ public class Funciones {
         }
     }
 
+    public void reemplazarChar(){
+        String mensaje= "La sonrisa sera la mejor arma contra la tristeza";
+        System.out.println(mensaje);
+        String nuevoMensaje = mensaje.replace(" ","");
+        System.out.println("Mensaje modificado: "+nuevoMensaje);
+
+    }
+
+    public void eliminarChar() {
+        System.out.println("Ingrese una frase");
+        String frase = captura.nextLine();
+        frase = frase.replace(" ","");
+        System.out.println("Frase sin espacios: "+frase);
+    }
+
+    public  void contadorVocales(){
+        System.out.println("Ingrese una frase");
+        String frase = captura.nextLine();
+        int numeroVocales=0;
+        for (int i=0; i<frase.length();i++){
+            switch (frase.charAt(i)){
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':{
+                    numeroVocales++;
+                    break;
+                }
+            }
+        }
+        System.out.println("la frase contiene: "+numeroVocales+ " vocales");
+    }
+
+    public void stringDiferencias() {
+        String cadenaMayor;
+        String cadenaMenor;
+        String Diferencias = "";
+        System.out.println("Ingrese la primera frase");
+        String frase1 = captura.nextLine();
+        System.out.println("Ingrese la segunda frase");
+        String frase2 = captura.nextLine();
+        if (frase1.equals(frase2)) System.out.println("las frases son iguales");
+        else {
+            System.out.println("los string son diferentes ");
+
+            if (frase1.length() >= frase2.length()) {
+                cadenaMayor = frase1;
+                cadenaMenor = frase2;
+            } else {
+                cadenaMayor = frase2;
+                cadenaMenor = frase1;
+            }
+            for (int i = 0; i < cadenaMayor.length(); i++) {
+                if (i < cadenaMenor.length()) {
+                    if (cadenaMayor.charAt(i) == cadenaMenor.charAt(i)) {
+                        Diferencias += " ";
+                    } else Diferencias += cadenaMayor.charAt(i);
+                }
+                else Diferencias += cadenaMayor.charAt(i);
+            }
+            System.out.println("tomando como base el primer String o el String mayor las diferencias son :"+Diferencias);
+        }
+    }
+
 }
