@@ -10,7 +10,6 @@ public class Funciones {
 
     public Scanner captura = new Scanner(System.in);
 
-    //primer y segundo punto
     public String calculoMayor_Menor(){
         int numero1=0;
         int numero2=0;

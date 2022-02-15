@@ -17,10 +17,10 @@ public class ElectrodomesticosEjecutables {
         electrodomesticos[9]=new Lavadora(300,"azul",'C',48,50);
 
         for(int i=0;i<10;i++){
-            System.out.println("precio "+i+": "+electrodomesticos[i].precioFinal());
+            System.out.println("precio "+i+": "+electrodomesticos[i].precioFinal()+"€");
             precioTotal+=electrodomesticos[i].precioFinal();
         }
-        System.out.println("el precio total de los electrodomesticos es: "+precioTotal);
+        System.out.println("el precio total de los electrodomesticos es: "+precioTotal +"€");
     }
 
 }
